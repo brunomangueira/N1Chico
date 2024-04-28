@@ -1,0 +1,85 @@
+/* Estrutura */
+*{list-style: none;}
+:root{
+    --main-radius: 10px;
+    --main-padding: 10px;
+    --gap:10px;
+    --bg: #fc7e03;
+}
+body{
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+main, article, footer{
+    margin: 5px;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    background-color: var(--bg);
+    
+}
+.main-container{
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main{flex: 1;}
+
+section{
+    display: flex;
+    flex:2;
+}
+
+/* Config Article */
+.content{padding: 20px;}
+.content img{border-radius: 10px;}
+.content p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px;
+}
+.footer{
+    display: flex;
+}
+
+.navbar {
+    background-color: #fc7e03;
+    border-radius: 10px; 
+    margin: 5px;
+}
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #001f3f; 
+}
+
+/* Estilizando o botão de busca */
+.btn-outline-success {
+    color: #fff;
+    background-color: #001f3f;
+    border-color: #001f3f;
+}
+
+/* Alterando a cor do botão de busca ao passar o mouse */
+.btn-outline-success:hover {
+    color: #fc7e03; 
+    background-color: #001f3f; 
+    border-color: #001f3f;
+}
